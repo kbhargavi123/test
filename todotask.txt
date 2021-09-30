@@ -1,0 +1,7 @@
+create a local repositotry with some files
+ 
+push to remote /// create a repository in cloud
+
+2. in local create a branch dev from master and make changes in dev branch and remote push 
+
+3.create a pull request to merge to master from dev
