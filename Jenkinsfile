@@ -11,13 +11,14 @@ pipeline {
         }
         stage('tar') {
             steps {
+               
                sh '''
                  tar -zcvf xyz.tar.gz test
                  tar -zxvf water/xyz.tar.gz
                  '''
-               }
+               
              
             }
         }
-   }
+    }
 }
