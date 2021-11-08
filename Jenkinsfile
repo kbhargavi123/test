@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('checkout scm') {
             steps {
-                git branch: 'main', url: 'https://github.com/kbhargavi123/test.git'
+                git 'https://github.com/kbhargavi123/test.git'
                 echo 'checkedout scm'
             }
         }
