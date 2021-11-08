@@ -13,7 +13,7 @@ pipeline {
             steps {
                
                sh '''
-                 tar -zcvf xyz.tar.gz test
+                 tar -zcvf xyz.tar.gz *
                  tar -zxvf water/xyz.tar.gz
                  '''
                
