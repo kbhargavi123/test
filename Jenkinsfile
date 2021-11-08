@@ -5,6 +5,7 @@ pipeline {
     stages {
         stage('checkout scm') {
             steps {
+                cleanWs()
                 git 'https://github.com/kbhargavi123/test.git'
                 echo 'checkedout scm'
             }
@@ -13,9 +14,9 @@ pipeline {
             steps {
                
                sh '''
-                 tar -zcvf water/xyz.tar.gz *
+                 tar -cvf water/xyz.tar *
                  echo "files are compressed"
-                 tar -zxvf water/xyz.tar.gz
+                 tar -xvf water/xyz.tar
                  '''
                
              
