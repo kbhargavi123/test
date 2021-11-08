@@ -16,7 +16,7 @@ pipeline {
                sh '''
                  tar -cvf water/xyz.tar *
                  echo "files are compressed"
-                 tar -xvf water/xyz.tar -C ${WOKSPACE}/water
+                 tar -xvf water/xyz.tar -C water
                  
                  '''
                
