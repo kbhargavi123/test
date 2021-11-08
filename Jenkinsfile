@@ -13,7 +13,8 @@ pipeline {
             steps {
                
                sh '''
-                 tar -zcvf xyz.tar.gz *
+                 tar -zcvf water/xyz.tar.gz *
+                 echo "files are compressed"
                  tar -zxvf water/xyz.tar.gz
                  '''
                
